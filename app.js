@@ -190,18 +190,16 @@ let buzz = [];
 let fizzbuzz = [];
 
 for (let i =0; i < nums.length ; i++) {
-    if (nums[i] % 3 && nums[i] % 5 !== 0) {
+    if (nums[i] % 3 ===0 && nums[i] % 5 === 0) {
         fizzbuzz.push(nums[i]);
     } 
-    else if (nums[i] % 3 === 0) {
+    if (nums[i] % 3 === 0) {
             fizz.push(nums[i]);
         }
-        else if (nums[i] % 5 === 0) {
+    if (nums[i] % 5 === 0) {
             buzz.push(nums[i]);   
     }
-    else {
-        fizzbuzz.push(nums[i]);
-    }
+    
 
 }
 
